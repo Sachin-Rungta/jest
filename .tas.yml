@@ -2,18 +2,10 @@
 framework: "jest"
 postMerge:
     pattern:
-    - "./packages/**/*.test.ts"
-    - "./packages/**/*.test.js"
     - "./e2e/__tests__/*.test.ts"
-    - "./examples/angular/shared/*.spec.ts"
-    - "./examples/angular/*.spec.ts"
 preMerge:
     pattern:
-    - "./packages/**/*.test.ts"
-    - "./packages/**/*.test.js"
     - "./e2e/__tests__/*.test.ts"
-    - "./examples/angular/shared/*.spec.ts"
-    - "./examples/angular/*.spec.ts"
 preRun:
     - yarn install
     - yarn run build
