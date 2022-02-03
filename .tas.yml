@@ -4,10 +4,10 @@ preRun:
     - yarn install
 postMerge:
   pattern:
-    - "./e2e/__tests__/toMatchInlineSnapshot.test.ts"
+    - "./examples/**/*.spec.ts"
 preMerge:
   pattern:
-    - "./e2e/__tests__/toMatchInlineSnapshot.test.ts"
+    - "./examples/**/*.spec.ts"
 postRun:
   command:
     - yarn --version
