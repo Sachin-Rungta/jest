@@ -1,15 +1,14 @@
 framework: jest
-tier: large
-postMerge: 
-  pattern: 
+preRun:
+  command:
+    - yarn install
+postMerge:
+  pattern:
     - "./e2e/__tests__/*.test.ts"
 preMerge:
   pattern:
     - "./e2e/__tests__/*.test.ts"
-preRun:
-     command:
-        - yarn install
 postRun:
-     command:
-        - yarn --version
-version: 2.1
+  command:
+    - yarn --version
+version: 1.0
