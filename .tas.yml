@@ -20,6 +20,7 @@ preMerge:
 postRun:
   command:
     - yarn --version
+    - yarn --version
 version: 1.0
 
 
