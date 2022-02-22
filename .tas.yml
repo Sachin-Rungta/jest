@@ -8,15 +8,15 @@ postMerge:
     - "./examples/**/*.spec.ts"
     - "./examples/**/*.test.js"
     # - "./packages/**/src/__tests__/*.test.ts"
-    - "./examples/**/*-test.js"
-    - "./examples/**/*_test.js"
+#     - "./examples/**/*-test.js"
+#     - "./examples/**/*_test.js"
 preMerge:
   pattern:
     - "./examples/**/*.spec.ts"
     - "./examples/**/*.test.js"
     # - "./packages/**/src/__tests__/*.test.ts"
-    - "./examples/**/*-test.js"
-    - "./examples/**/*_test.js"
+#     - "./examples/**/*-test.js"
+#     - "./examples/**/*_test.js"
 postRun:
   command:
     - yarn --version
