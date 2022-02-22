@@ -5,21 +5,20 @@ preRun:
     - yarn run build
 postMerge:
   pattern:
-    # - "./examples/**/*.spec.ts"
+    - "./examples/**/*.spec.ts"
     # - "./examples/**/*.test.js"
-    - "./packages/**/src/__tests__/*.test.ts"
+    # - "./packages/**/src/__tests__/*.test.ts"
     # - "./examples/**/*-test.js"
     # - "./examples/**/*_test.js"
 preMerge:
   pattern:
-    # - "./examples/**/*.spec.ts"
+    - "./examples/**/*.spec.ts"
     # - "./examples/**/*.test.js"
-    - "./packages/**/src/__tests__/*.test.ts"
+    # - "./packages/**/src/__tests__/*.test.ts"
     # - "./examples/**/*-test.js"
     # - "./examples/**/*_test.js"
 postRun:
   command:
-    - yarn --version
     - yarn --version
 version: 1.0
 
